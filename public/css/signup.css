@@ -1,0 +1,270 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f7fc;
+            font-family: 'Inter', sans-serif;
+            color: #131B2F;
+            line-height: 1.4;
+            padding: 2rem 1.5rem;
+        }
+
+        /* main container - matches clean card style from reference */
+        .app-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        /* header area: VERIFY AI + tagline */
+        .brand-header {
+            margin-bottom: 2rem;
+            border-left: 4px solid #2563eb;
+            padding-left: 1rem;
+        }
+
+        .brand-header h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            background: linear-gradient(135deg, #1E2A4F 0%, #2563eb 80%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .brand-tag {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #4b587c;
+            margin-top: 0.3rem;
+        }
+
+        /* two column layout inspired by reference: left intro + right form */
+        .signup-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .info-panel {
+            flex: 1.2;
+            min-width: 240px;
+        }
+
+        .form-panel {
+            flex: 1;
+            min-width: 320px;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.02);
+            padding: 2rem 1.8rem;
+            border: 1px solid #eef2f9;
+            transition: transform 0.2s ease;
+        }
+
+        /* left side stats & verif badge — replicates the "94% accuracy" card style */
+        .hero-badge {
+            background: white;
+            border-radius: 2rem;
+            padding: 1.4rem 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e9edf4;
+            box-shadow: 0 6px 12px -8px rgba(0,0,0,0.05);
+        }
+
+        .stat-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin-top: 1rem;
+            justify-content: space-between;
+        }
+
+        .stat-item {
+            text-align: left;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0f2b4d;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #5470a6;
+            letter-spacing: 0.5px;
+        }
+
+        .verified-quote {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 1rem 0 0.5rem;
+            line-height: 1.3;
+            color: #0c1c38;
+        }
+
+        .quote-sub {
+            font-size: 0.9rem;
+            color: #4a5a7a;
+            border-left: 3px solid #2563eb;
+            padding-left: 0.8rem;
+            margin: 0.8rem 0;
+        }
+
+        /* form styling - minimal, matches "New Verification Request" card style */
+        .form-title {
+            font-size: 1.65rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.2px;
+        }
+
+        .form-sub {
+            font-size: 0.85rem;
+            color: #5f6f92;
+            border-bottom: 1px solid #eef2f8;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.35rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #2c3f66;
+            margin-bottom: 0.5rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            font-size: 0.95rem;
+            font-family: 'Inter', monospace;
+            border: 1px solid #dfe5f0;
+            border-radius: 18px;
+            background-color: #ffffff;
+            transition: all 0.2s;
+            outline: none;
+            color: #111827;
+        }
+
+        input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+        }
+
+        .password-hint {
+            font-size: 0.7rem;
+            color: #7482a2;
+            margin-top: 0.3rem;
+        }
+
+        .error-message {
+            font-size: 0.75rem;
+            color: #dc2626;
+            margin-top: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .btn-primary {
+            background: #131B2F;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 0.9rem;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.05s;
+            margin-top: 0.5rem;
+            letter-spacing: 0.2px;
+        }
+
+        .btn-primary:hover {
+            background: #1e2a4a;
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+
+        .login-redirect {
+            text-align: center;
+            margin-top: 1.8rem;
+            font-size: 0.85rem;
+            border-top: 1px solid #eff3fa;
+            padding-top: 1.5rem;
+        }
+
+        .login-redirect a {
+            color: #2563eb;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .login-redirect a:hover {
+            text-decoration: underline;
+        }
+
+        /* micro free limit reached style (as in reference, decorative) */
+        .free-badge {
+            background: #f0f4fe;
+            display: inline-block;
+            border-radius: 40px;
+            padding: 0.3rem 1rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #2563eb;
+            margin-top: 1rem;
+        }
+
+        /* live toast message */
+        .toast-msg {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e293b;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 60px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            z-index: 1000;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: opacity 0.2s;
+            pointer-events: none;
+        }
+
+        @media (max-width: 720px) {
+            body {
+                padding: 1.2rem;
+            }
+            .form-panel {
+                padding: 1.5rem;
+            }
+            .verified-quote {
+                font-size: 1.2rem;
+            }
+        }
